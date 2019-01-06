@@ -4,7 +4,7 @@ from readability import Document
 
 url='https://meduza.io/feature/2018/05/24/kak-gosudarstvo-otobralo-u-samyh-bednyh-grazhdan-severnye-nadbavki-a-potom-vernulo-a-potom-opyat-otobralo'
 
-def cleantext(text):
+def cleantext(text): #just wanna cleanup and remove html
     clean = re.compile('<.*?>')
     return html.unescape(re.sub(clean, '', text))
 
